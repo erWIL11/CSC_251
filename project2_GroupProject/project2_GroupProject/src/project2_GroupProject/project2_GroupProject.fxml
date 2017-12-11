@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="315.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2_GroupProject.Project2Controller">
+   <children>
+      <Label fx:id="sizeLabel" layoutX="13.0" layoutY="8.0" text="Select Pizza Size:" />
+      <Label fx:id="crustLabel" layoutX="9.0" layoutY="80.0" text="Select Crust Style:" />
+      <RadioButton fx:id="smallSizeRadioButton" layoutX="111.0" layoutY="8.0" mnemonicParsing="false" selected="true" text="Small - $7">
+         <toggleGroup>
+            <ToggleGroup fx:id="pizzaSize" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="mediumSizeRadioButton" layoutX="208.0" layoutY="8.0" mnemonicParsing="false" text="Medium - $9" toggleGroup="$pizzaSize" />
+      <RadioButton fx:id="largeSizeRadioButton" layoutX="111.0" layoutY="34.0" mnemonicParsing="false" text="Large - $11" toggleGroup="$pizzaSize" />
+      <RadioButton layoutX="208.0" layoutY="34.0" mnemonicParsing="false" text="X-Large - $13" toggleGroup="$pizzaSize" fx:id="xtraLargeSizeRadioButton" />
+      <RadioButton fx:id="thinCrustRadioButton" layoutX="109.0" layoutY="80.0" mnemonicParsing="false" selected="true" text="Thin">
+         <toggleGroup>
+            <ToggleGroup fx:id="crustStyle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="handTossedCrustRadioButton" layoutX="209.0" layoutY="80.0" mnemonicParsing="false" text="Hand-Tossed" toggleGroup="$crustStyle" />
+      <RadioButton fx:id="deepDishCrustRadioButton" layoutX="110.0" layoutY="107.0" mnemonicParsing="false" text="Deep-Dish" toggleGroup="$crustStyle" />
+      <RadioButton fx:id="stuffedCrustRadioButton" layoutX="209.0" layoutY="107.0" mnemonicParsing="false" text="Stuffed-Crust" toggleGroup="$crustStyle" />
+      <RadioButton fx:id="gutBusterCrustRadioButton" layoutX="148.0" layoutY="133.0" mnemonicParsing="false" text="Gut-Buster" toggleGroup="$crustStyle" />
+      <CheckBox fx:id="pepperoniToppingCheckBox" layoutX="19.0" layoutY="186.0" mnemonicParsing="false" text="Pepperoni" />
+      <CheckBox fx:id="sausageToppingCheckBox" layoutX="110.0" layoutY="186.0" mnemonicParsing="false" text="Sausage" />
+      <CheckBox fx:id="hamToppingCheckBox" layoutX="211.0" layoutY="186.0" mnemonicParsing="false" text="Ham" />
+      <CheckBox fx:id="chickenToppingCheckBox" layoutX="110.0" layoutY="211.0" mnemonicParsing="false" text="Chicken" />
+      <CheckBox fx:id="baconToppingCheckBox" layoutX="19.0" layoutY="211.0" mnemonicParsing="false" text="Bacon" />
+      <CheckBox fx:id="extraCheeseToppingCheckBox" layoutX="211.0" layoutY="211.0" mnemonicParsing="false" text="Extra Cheese" />
+      <CheckBox fx:id="greenPepperToppingCheckBox" layoutX="211.0" layoutY="234.0" mnemonicParsing="false" text="Green Peppers" />
+      <CheckBox fx:id="mushroomToppingCheckBox" layoutX="110.0" layoutY="234.0" mnemonicParsing="false" text="Mushrooms" />
+      <CheckBox fx:id="pineappleToppingCheckBox" layoutX="19.0" layoutY="234.0" mnemonicParsing="false" text="Pineapple" />
+      <Label fx:id="toppingLabel" layoutX="75.0" layoutY="160.0" text="Choose Toppings ($0.50 each)" />
+      <Button layoutX="131.0" layoutY="284.0" mnemonicParsing="false" onAction="#submitButtonListener" text="Submit" />
+      <CheckBox fx:id="blackOliveToppingCheckBox" layoutX="19.0" layoutY="256.0" mnemonicParsing="false" text="Black Olives" />
+      <CheckBox fx:id="slicedTomatoToppingCheckBox" layoutX="110.0" layoutY="256.0" mnemonicParsing="false" text="Sliced Tomato" />
+      <CheckBox fx:id="onionToppingCheckBox" layoutX="211.0" layoutY="256.0" mnemonicParsing="false" text="Onions" />
+   </children>
+</AnchorPane>
